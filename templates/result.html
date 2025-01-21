@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonuçlar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Sonuçlar</h1>
+        <div class="result-card">
+            <img src="{{ image_url }}" alt="Yüklenen Resim" class="result-image">
+            <div class="result-details">
+                <p><strong>Algılanan Bitki:</strong> <span class="result-text">{{ detected_class }}</span></p>
+                <p><strong>Tahmin Edilen Durum:</strong> <span class="result-text">{{ prediction }}</span></p>
+            </div>
+        </div>
+
+        {% if prediction in disease_info %}
+            <div class="disease-info">
+                <h2 class="info-title">Hastalık Hakkında Bilgi</h2>
+                <p><strong>Açıklama:</strong> <span>{{ disease_info[prediction].description }}</span></p>
+                <p><strong>Korunma Yöntemleri:</strong> <span>{{ disease_info[prediction].prevention }}</span></p>
+                <p><strong>Tedavi Yöntemleri:</strong> <span>{{ disease_info[prediction].treatment }}</span></p>
+            </div>
+        {% else %}
+            <p class="no-info">Bu hastalık hakkında bilgi bulunmamaktadır.</p>
+        {% endif %}
+        
+        <a href="/" class="back-btn">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>

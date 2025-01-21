@@ -1,0 +1,96 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.result-card {
+    background: #e6f7f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.result-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.result-details {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.result-text {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.disease-info {
+    background-color: #fff3e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.info-title {
+    font-size: 24px;
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.disease-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.disease-info span {
+    color: #555;
+}
+
+.no-info {
+    color: #c0392b;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2980b9;
+}
